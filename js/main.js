@@ -9,6 +9,7 @@ const typed = new Typed('.multiple-text', {
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
+const links = document.querySelectorAll('.menu');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -26,6 +27,15 @@ overlay.addEventListener('click', () => {
     menu.classList.remove('active');
     overlay.classList.remove('active');
     hamburger.setAttribute('aria-expanded', 'false');
+});
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    });
 });
 
 window.addEventListener('scroll', function () {
