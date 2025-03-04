@@ -9,7 +9,7 @@ const typed = new Typed('.multiple-text', {
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
-const links = document.querySelectorAll('.menu');
+const links = document.querySelectorAll('.menu li a');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
