@@ -8,12 +8,12 @@ const Project = () => {
 
             <div className="my-6 py-6">
                 <div 
-                    className="grid grid-cols-1 gap-4 mx-auto max-w-2xl
+                    className="grid grid-cols-1 mx-auto max-w-2xl
                                 border border-gray-500 dark:border-[#ffffff1a] rounded-xl">
                     <img src="my_projects/GreenMelionAI.png" alt="my project" 
                             className="object-cover border-b-4 border rounded-t-xl"/>
 
-                    <div className="pt-2 px-6 pb-6">
+                    <div className="pt-4 px-6 pb-6 bg-gray-200 dark:bg-[#ffffff0d]">
                         <h2 className="text-2xl text-blue-700 dark:text-[#4dabf7] justify-self-center font-bold">GreenMerlionAI</h2>
 
                         <p className="p-1 sm:p-4">
